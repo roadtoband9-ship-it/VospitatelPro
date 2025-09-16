@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VospitatelPro — Всё для воспитателей</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f9fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.7rem;
+    }
+    header p {
+      font-size: 1.3rem;
+      opacity: 0.95;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2.2rem;
+      color: #444;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .download {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .btn {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      font-size: 1.2rem;
+      padding: 0.9rem 2.2rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: linear-gradient(135deg, #00f2fe, #4facfe);
+    }
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .testimonial {
+      background: white;
+      padding: 1.3rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      font-style: italic;
+      position: relative;
+    }
+    .testimonial::before {
+      content: "“";
+      font-size: 3rem;
+      color: #4facfe;
+      position: absolute;
+      top: -10px;
+      left: 15px;
+    }
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .animate {animation: fadeInUp 0.8s ease forwards;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 VospitatelPro</h1>
+    <p>Полное собрание материалов, методичек и сценариев для воспитателей</p>
+  </header>
+
+  <div class="container">
+    <section class="section animate">
+      <h2>Что есть в приложении?</h2>
+      <div class="features">
+        <div class="card">📘 Методички для всех возрастных групп: младшая, средняя, старшая, подготовительная.</div>
+        <div class="card">📑 Программы и стандарты ФГОС ДО с пояснениями и примерами применения.</div>
+        <div class="card">🎉 Сценарии утренников, праздников, выпускных и развлечений для детей.</div>
+        <div class="card">📚 Редкие книги и пособия для педагогов, которые трудно найти в свободном доступе.</div>
+        <div class="card">🖍️ Конспекты занятий по математике, чтению, развитию речи, музыке и ИЗО.</div>
+        <div class="card">🌐 Ссылки на проверенные ресурсы для воспитателей и родителей.</div>
+        <div class="card">📊 Планирование учебного года с готовыми шаблонами.</div>
+        <div class="card">🧩 Игры и упражнения для развития памяти, внимания и мышления.</div>
+      </div>
+    </section>
+
+    <section class="section animate">
+      <h2>Отзывы воспитателей</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          Воспитатель, д/с №145 (Казань):  
+          <br>«Очень удобно! Всё собрано в одном месте, не нужно искать по интернету».
+        </div>
+        <div class="testimonial">
+          Воспитатель, д/с №32 (Москва):  
+          <br>«Приложение реально спасает при подготовке к занятиям. Все методички под рукой».
+        </div>
+        <div class="testimonial">
+          Воспитатель, д/с №77 (Новосибирск):  
+          <br>«Нашла редкие материалы, которые раньше искала неделями. Большое спасибо!»
+        </div>
+        <div class="testimonial">
+          Воспитатель, д/с №21 (Екатеринбург):  
+          <br>«Очень понравились сценарии праздников, всё подробно и красочно!»
+        </div>
+        <div class="testimonial">
+          Воспитатель, д/с №9 (Нижний Новгород):  
+          <br>«Теперь подготовка к занятиям занимает в разы меньше времени. Удобный поиск».
+        </div>
+      </div>
+    </section>
+
+    <section class="section animate">
+      <h2>Почему стоит скачать?</h2>
+      <p style="text-align:center; max-width:800px; margin:auto;">
+        VospitatelPro создан специально для воспитателей детских садов. 
+        В приложении собраны десятки пособий, методичек, редких книг и конспектов, 
+        которые помогут в ежедневной работе. Всё структурировано по темам, 
+        чтобы вы могли легко найти нужный материал. Приложение обновляется, 
+        добавляются новые разработки и сценарии.
+      </p>
+      <ul>
+        <li>✅ Экономия времени — всё в одном приложении</li>
+        <li>✅ Доступ к редким методичкам и книгам</li>
+        <li>✅ Подходит для всех возрастных групп</li>
+        <li>✅ Постоянные обновления и новые материалы</li>
+        <li>✅ Удобный интерфейс и быстрый поиск</li>
+      </ul>
+      <div class="download">
+        <a href="downloads/VospitatelPro-v1.0.apk" class="btn">📥 Скачать APK</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 VospitatelPro — приложение для воспитателей. Все права защищены.
+  </footer>
+</body>
+</html>
